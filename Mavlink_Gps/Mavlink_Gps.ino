@@ -23,7 +23,7 @@ void loop() {
   /* The default UART header for your MCU */
   int sysid = 1;                   ///< ID 20 for this airplane. 1 PX, 255 ground station
   int compid = 158;                ///< The component sending the message
-  int type = MAV_TYPE_QUADROTOR;   ///< This system is an airplane / fixed wing
+  int type = MAV_TYPE_HEXAROTOR;   ///< This system is an airplane / fixed wing
 
   // Define the system type, in this case an airplane -> on-board controller
   // uint8_t system_type = MAV_TYPE_FIXED_WING;

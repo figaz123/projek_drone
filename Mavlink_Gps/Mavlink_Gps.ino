@@ -106,6 +106,7 @@ void comm_receive() {
         case MAVLINK_MSG_ID_HEARTBEAT:  // #0: Heartbeat
           {
             mavlink_heartbeat_t variabel;
+            mavlink_msg_heartbeat_decode (&msg, &variabel);
             Serial.println("PX HB");
             Serial.println("heart beat: ");
             Serial.print("custom mode: ");
